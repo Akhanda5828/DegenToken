@@ -18,7 +18,7 @@ Steps to be followed inorder to run the contract seamlessly:
 
 1. First we have to take test credit in the form of AVAX tokens in the Avalanche Fuji C-Chain.
 
-Following steps are to be followed to create a Test Network in Metamask:
+*Following steps are to be followed to create a Test Network in Metamask:*
 *Network Name*: Avalanche Fuji C-Chain
 *New RPC URL*: https://api.avax-test.network/ext/bc/C/rpc
 *ChainID*: 43113
