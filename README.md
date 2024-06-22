@@ -1,17 +1,16 @@
-# Project Title
+# DEGEN TOKEN
 
-Simple overview of use/purpose.
+This is a smart contract in the form of Token for Degen Gaming where several functionalities can be performed.
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+With the help of Smart Contract we can mint tokens, transfer from one address to another , burn them and also buy certian merchandise of the Degen Gaming over the Decentralised Network. The working of the contract is verified over the Avalanche Fuji Test Network. The verification is done on Snowtrace Testnet.
 
 ## Getting Started
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+You can download the DegenToken.sol file and then run it on Remix and inorder to 
 
 ### Executing program
 
@@ -23,19 +22,16 @@ code blocks for commands
 
 ## Help
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+
 
 ## Authors
 
 Contributors names and contact info
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Akhanda Pal Biswas 
+[@Akhanda](https://www.linkedin.com/in/akhanda-pal-biswas-445a88230/)
 
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE.md file for details
