@@ -19,6 +19,7 @@ contract DegenToken is ERC20, Ownable, ERC20Burnable {
     Item[] public items;
 
     mapping(uint256 => uint256) public itemStock;
+    mapping(address => mapping(uint256 => uint256)) public userInventory;
 
     constructor() ERC20("Degen", "DGN") Ownable(msg.sender) {
         _initializeItems();
@@ -71,12 +72,21 @@ contract DegenToken is ERC20, Ownable, ERC20Burnable {
         require(balanceOf(msg.sender) >= item.price, "You do not have enough Degen Tokens to redeem this item");
 
         _burn(msg.sender, item.price);
-        emit TokensRedeemed(msg.sender, item.price, item.name);
-
         itemStock[_choice - 1]--;
+        userInventory[msg.sender][_choice - 1]++;
+        
+        emit TokensRedeemed(msg.sender, item.price, item.name);
     }
 
     function storeItems() external view returns (Item[] memory) {
         return items;
+    }
+
+    function getUserInventory(address user) external view returns (uint256[] memory) {
+        uint256[] memory inventory = new uint256[](items.length);
+        for (uint256 i = 0; i < items.length; i++) {
+            inventory[i] = userInventory[user][i];
+        }
+        return inventory;
     }
 }
