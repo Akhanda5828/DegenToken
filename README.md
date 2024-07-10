@@ -53,6 +53,7 @@ After the Contract is deployed we can perform the following operations in it:
 5. GetBalance: Check the balance of a particular address at a particular time.
 6. StoreItems: Displays the list of all merchandise present in the Inventory having attributes: (Name, Cost, Stock).
 7. Approve: Approve a certain address to be able to transact in the Smart Contract Environment.
+8. GetUserInventory: Check the items purchased by a particular user based on their address.
 
 ## Help
 
